@@ -4,6 +4,15 @@
 	"parameters": {
 		"factoryName": {
 			"value": "adfdevecomexample"
+		},
+		"LS_SQL_INPUT_connectionString": {
+			"value": ""
+		},
+		"LS_SQL_PARQ_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_PARQ_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlssidevecom01.dfs.core.windows.net/"
 		}
 	}
 }

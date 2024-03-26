@@ -7,6 +7,18 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adfdevecomexample"
 		},
+		"LS_SQL_INPUT_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_SQL_INPUT'"
+		},
+		"LS_SQL_PARQ_OUTPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SQL_PARQ_OUTPUT'"
+		},
+		"LS_SQL_PARQ_OUTPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidevecom01.dfs.core.windows.net/"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -33,6 +45,15 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"LS_SQL_PARQ_OUTPUT_accountKey": {
+						"value": "[parameters('LS_SQL_PARQ_OUTPUT_accountKey')]"
+					},
+					"LS_SQL_INPUT_connectionString": {
+						"value": "[parameters('LS_SQL_INPUT_connectionString')]"
+					},
+					"LS_SQL_PARQ_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_SQL_PARQ_OUTPUT_properties_typeProperties_url')]"
 					}
 				}
 			},
