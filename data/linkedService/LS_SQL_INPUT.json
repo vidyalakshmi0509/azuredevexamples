@@ -1,0 +1,16 @@
+{
+	"name": "LS_SQL_INPUT",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=DESKTOP-QDMVUOP;initial catalog=SalesEcom;user id=sa",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI3OGJiOTRiNS0wMDkzLTQ5YzAtYWQ2OC04MjRlNTgyZDE5MjUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
