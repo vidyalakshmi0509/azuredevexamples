@@ -1,0 +1,12 @@
+{
+	"name": "LS_REST_INPUT",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://retoolapi.dev/j3rDMK/data",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
